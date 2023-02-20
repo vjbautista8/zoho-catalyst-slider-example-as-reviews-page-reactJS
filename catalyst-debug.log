@@ -1,0 +1,762 @@
+[debug] [2023-02-18T22:05:36.226Z] : 
+[debug] [2023-02-18T22:05:36.227Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T22:05:36.227Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-18T22:05:36.228Z] : CLI Version:  1.13.3
+[debug] [2023-02-18T22:05:36.228Z] : Platform:     win32
+[debug] [2023-02-18T22:05:36.229Z] : Node Version: v18.12.1
+[debug] [2023-02-18T22:05:36.230Z] : Time:         Sun Feb 19 2023 06:05:36 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-18T22:05:36.230Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T22:05:36.230Z] : 
+[debug] [2023-02-18T22:05:36.914Z] : > authorizing via signed-in user option
+[debug] [2023-02-18T22:05:36.915Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-18T22:05:36.928Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284 
+
+[debug] [2023-02-18T22:05:37.577Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 22:05:38 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=bf62b8f1-8d29-4f34-a56e-b17115ac5c2a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bf62b8f1-8d29-4f34-a56e-b17115ac5c2a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T22:05:37.580Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/environment 
+
+[debug] [2023-02-18T22:05:38.129Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 22:05:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=a86a6aa6-c6e1-48d0-a8ef-73a55959b52a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a86a6aa6-c6e1-48d0-a8ef-73a55959b52a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T22:05:38.415Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-18T22:05:38.981Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 22:05:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=852cff57-21ea-4a1c-b4d0-c623b119ca99;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=852cff57-21ea-4a1c-b4d0-c623b119ca99;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T22:05:38.988Z] : unknown eol undefined hence skipping check
+[info] [2023-02-18T22:05:39.086Z] : i server[slider_function]: URL : http://localhost:3000/server/slider_function/
+[info] [2023-02-18T22:05:39.087Z] : 
+[info] [2023-02-18T22:05:41.737Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-02-18T22:05:41.739Z] : i client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-02-18T22:05:47.974Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:05:47.975Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:17:  'useState' is defined but never used        no-unused-vars
+  Line 1:27:  'useEffect' is defined but never used       no-unused-vars
+  Line 2:10:  'FiChevronRight' is defined but never used  no-unused-vars
+  Line 2:26:  'FiChevronLeft' is defined but never used   no-unused-vars
+  Line 3:10:  'FaQuoteRight' is defined but never used    no-unused-vars
+  Line 4:8:   'data' is defined but never used            no-unused-vars
+[info] [2023-02-18T22:05:47.975Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:05:47.976Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2023-02-18T22:12:17.379Z] : 
+[debug] [2023-02-18T22:12:17.381Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T22:12:17.381Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-18T22:12:17.381Z] : CLI Version:  1.13.3
+[debug] [2023-02-18T22:12:17.382Z] : Platform:     win32
+[debug] [2023-02-18T22:12:17.382Z] : Node Version: v18.12.1
+[debug] [2023-02-18T22:12:17.383Z] : Time:         Sun Feb 19 2023 06:12:17 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-18T22:12:17.383Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T22:12:17.383Z] : 
+[debug] [2023-02-18T22:12:18.348Z] : > authorizing via signed-in user option
+[debug] [2023-02-18T22:12:18.348Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-18T22:12:18.360Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284 
+
+[debug] [2023-02-18T22:12:18.977Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 22:12:19 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=66dea7e1-5e7c-4c82-86ef-da25b5391ded;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=66dea7e1-5e7c-4c82-86ef-da25b5391ded;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T22:12:18.981Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/environment 
+
+[debug] [2023-02-18T22:12:19.527Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 22:12:20 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=255f3670-a32f-4825-b91e-6eb9457ae076;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=255f3670-a32f-4825-b91e-6eb9457ae076;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T22:12:19.771Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-18T22:12:20.335Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 22:12:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=5973e045-be91-4857-9b09-28c8e7064e28;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5973e045-be91-4857-9b09-28c8e7064e28;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T22:12:20.337Z] : unknown eol undefined hence skipping check
+[info] [2023-02-18T22:12:20.387Z] : i server[slider_function]: URL : http://localhost:3000/server/slider_function/
+[info] [2023-02-18T22:12:20.387Z] : 
+[info] [2023-02-18T22:12:23.739Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-02-18T22:12:23.741Z] : i client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-02-18T22:12:25.589Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T22:12:25.589Z] : [react-plugin]: 
+[info] [2023-02-18T22:12:25.590Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T22:12:25.590Z] : [react-plugin]: 
+[info] [2023-02-18T22:12:25.590Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T22:12:25.590Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T22:12:25.590Z] : [react-plugin]: 
+[info] [2023-02-18T22:12:25.590Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T22:12:25.591Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T22:12:25.591Z] : [react-plugin]: 
+[info] [2023-02-18T22:14:41.435Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:14:43.166Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:14:43.166Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:  'FiChevronRight' is defined but never used      no-unused-vars
+  Line 2:26:  'FiChevronLeft' is defined but never used       no-unused-vars
+  Line 3:10:  'FaQuoteRight' is defined but never used        no-unused-vars
+  Line 6:10:  'people' is assigned a value but never used     no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:14:43.166Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:14:43.167Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:15:51.588Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:15:52.052Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:15:52.053Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:  'FiChevronRight' is defined but never used      no-unused-vars
+  Line 2:26:  'FiChevronLeft' is defined but never used       no-unused-vars
+  Line 3:10:  'FaQuoteRight' is defined but never used        no-unused-vars
+  Line 6:10:  'people' is assigned a value but never used     no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:15:52.053Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:15:52.054Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:18:04.952Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:18:05.212Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:18:05.212Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:   'FiChevronRight' is defined but never used      no-unused-vars
+  Line 2:26:   'FiChevronLeft' is defined but never used       no-unused-vars
+  Line 3:10:   'FaQuoteRight' is defined but never used        no-unused-vars
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:   'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:   'setIndex' is assigned a value but never used   no-unused-vars
+  Line 18:36:  'title' is assigned a value but never used      no-unused-vars
+  Line 18:43:  'quote' is assigned a value but never used      no-unused-vars
+[info] [2023-02-18T22:18:05.213Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:18:05.213Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:18:37.133Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:18:37.337Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:18:37.337Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:   'FiChevronRight' is defined but never used      no-unused-vars
+  Line 2:26:   'FiChevronLeft' is defined but never used       no-unused-vars
+  Line 3:10:   'FaQuoteRight' is defined but never used        no-unused-vars
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:   'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:   'setIndex' is assigned a value but never used   no-unused-vars
+  Line 18:36:  'title' is assigned a value but never used      no-unused-vars
+  Line 18:43:  'quote' is assigned a value but never used      no-unused-vars
+[info] [2023-02-18T22:18:37.338Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:18:37.338Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:19:39.229Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:19:39.478Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:19:39.479Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:  'FiChevronRight' is defined but never used      no-unused-vars
+  Line 2:26:  'FiChevronLeft' is defined but never used       no-unused-vars
+  Line 3:10:  'FaQuoteRight' is defined but never used        no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:19:39.479Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:19:39.480Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:19:57.916Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:19:58.405Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:19:58.405Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:  'FiChevronRight' is defined but never used      no-unused-vars
+  Line 2:26:  'FiChevronLeft' is defined but never used       no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:19:58.405Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:19:58.406Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:20:47.868Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:20:48.300Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:20:48.300Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:20:48.300Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:20:48.301Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:24:32.712Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:24:33.883Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:24:33.883Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:24:33.883Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:24:33.883Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:25:35.270Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:25:35.584Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:25:35.585Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:25:35.585Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:25:35.585Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:27:31.407Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:27:31.643Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:27:31.644Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:27:31.644Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:27:31.644Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:28:07.721Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:28:07.896Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:28:07.897Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:28:07.897Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:28:07.897Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:28:16.220Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:28:16.434Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:28:16.435Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:28:16.435Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:28:16.435Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:29:27.578Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:29:27.974Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:29:27.974Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:   'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:   'setIndex' is assigned a value but never used   no-unused-vars
+  Line 19:15:  'position' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:29:27.974Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:29:27.975Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:29:42.183Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:29:42.379Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:29:42.379Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:10:  'index' is assigned a value but never used      no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:29:42.380Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:29:42.380Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:31:03.319Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:31:03.653Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:31:03.653Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:31:03.654Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:31:03.654Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:31:57.245Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:31:57.465Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:31:57.465Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:31:57.465Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:31:57.466Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:32:26.577Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:32:26.817Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:32:26.817Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:32:26.817Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:32:26.817Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:33:16.343Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:33:16.596Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:33:16.597Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:33:16.597Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:33:16.597Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:33:20.624Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:33:20.803Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:33:20.804Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:33:20.804Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:33:20.804Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:34:48.403Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:34:48.674Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:34:48.674Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:34:48.675Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:34:48.675Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2023-02-18T22:34:48.707Z] : > refreshing access token <
+[debug] [2023-02-18T22:34:48.712Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-02-18T22:34:49.297Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 22:34:49 GMT","content-type":"application/json;charset=UTF-8","content-length":"2728","connection":"close","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=8dfbb88e-2d57-47fe-bf0a-d3ed3f834a60;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8dfbb88e-2d57-47fe-bf0a-d3ed3f834a60;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T22:35:02.699Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:35:02.917Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:35:02.918Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:35:02.918Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:35:02.918Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:35:05.155Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:35:05.329Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:35:05.329Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:  'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:  'setIndex' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T22:35:05.330Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:35:05.330Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:37:07.069Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:37:07.328Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:37:07.328Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:   'setIndex' is assigned a value but never used   no-unused-vars
+  Line 25:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:37:07.329Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:37:07.329Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:37:17.002Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:37:17.215Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:37:17.215Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 7:17:   'setIndex' is assigned a value but never used   no-unused-vars
+  Line 25:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:37:17.215Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:37:17.215Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:38:47.490Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:38:47.818Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:38:47.818Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used           no-unused-vars
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 25:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:38:47.818Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:38:47.818Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:43:05.117Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:43:05.382Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:43:05.382Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 30:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:43:05.382Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:43:05.383Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:44:57.569Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:44:57.834Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:44:57.835Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 33:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:44:57.835Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:44:57.835Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:45:06.619Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:45:06.815Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:45:06.815Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 33:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:45:06.815Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:45:06.815Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:45:13.558Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:45:13.781Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:45:13.781Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 33:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:45:13.781Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:45:13.781Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:46:32.132Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:46:32.405Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:46:32.406Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 37:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:46:32.406Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:46:32.406Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:46:57.949Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:46:58.180Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:46:58.181Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 39:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:46:58.181Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:46:58.181Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:48:44.242Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:48:44.532Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:48:44.532Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:48:44.533Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:48:44.533Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:49:40.139Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:49:40.385Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:49:40.386Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2023-02-18T22:49:40.386Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:49:40.386Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:52:35.819Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:52:36.196Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:52:36.197Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\index.js
+  Line 4:8:  'App' is defined but never used  no-unused-vars
+[info] [2023-02-18T22:52:36.198Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:52:36.198Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:53:50.590Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:53:50.886Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-02-18T22:53:50.886Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 55:43:  'prevSlide' is not defined  no-undef
+  Line 58:43:  'nextSlide' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2023-02-18T22:55:46.305Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:55:46.571Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-02-18T22:55:46.571Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 65:43:  'prevSlide' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2023-02-18T22:56:29.971Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:56:30.197Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:56:30.198Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 59:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\index.js
+  Line 4:8:  'App' is defined but never used  no-unused-vars
+[info] [2023-02-18T22:56:30.199Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:56:30.199Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:56:37.553Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:56:37.754Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:56:37.754Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 59:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\index.js
+  Line 4:8:  'App' is defined but never used  no-unused-vars
+[info] [2023-02-18T22:56:37.755Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:56:37.755Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:56:57.876Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:56:58.075Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:56:58.075Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 59:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\index.js
+  Line 4:8:  'App' is defined but never used  no-unused-vars
+[info] [2023-02-18T22:56:58.076Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:56:58.076Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:57:58.202Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:57:58.452Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-02-18T22:57:58.452Z] : [react-plugin]: SyntaxError: C:\Users\USER\Desktop\React Udemy Class\CATALYST\Slider\react-app\src\Alternative.js: Missing semicolon. (45:6)
+  43 |       }
+  44 |       return index;
+> 45 |     }));
+     |       ^
+  46 |     }, 5000);
+  47 |     return () => clearInterval(slider);
+  48 |   }, [index]);
+[info] [2023-02-18T22:58:35.124Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:58:35.348Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:58:35.349Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 6:18:   'setPeople' is assigned a value but never used                                                                                                                                                                                               no-unused-vars
+  Line 48:6:   React Hook useEffect has a missing dependency: 'people.length'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setIndex' needs the current value of 'people.length'  react-hooks/exhaustive-deps
+  Line 65:41:  Expected '===' and instead saw '=='                                                                                                                                                                                                          eqeqeq
+
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\index.js
+  Line 4:8:  'App' is defined but never used  no-unused-vars
+[info] [2023-02-18T22:58:35.350Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:58:35.350Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T22:58:44.828Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T22:58:44.939Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T22:58:44.939Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 6:18:   'setPeople' is assigned a value but never used                                                                                                                                                                                               no-unused-vars
+  Line 48:6:   React Hook useEffect has a missing dependency: 'people.length'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setIndex' needs the current value of 'people.length'  react-hooks/exhaustive-deps
+  Line 65:41:  Expected '===' and instead saw '=='                                                                                                                                                                                                          eqeqeq
+
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\index.js
+  Line 4:8:  'App' is defined but never used  no-unused-vars
+[info] [2023-02-18T22:58:44.940Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T22:58:44.940Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T23:05:29.647Z] : Shutting down server
+[info] [2023-02-18T23:05:29.654Z] : 
+[info] [2023-02-18T23:05:29.655Z] : √ Shutdown complete
+[debug] [2023-02-18T23:05:29.655Z] : NO ERRORS REGISTERED
+[debug] [2023-02-18T23:05:29.655Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-02-18T23:05:29.655Z] : TOTAL DURATION OF COMMAND EXEC : 3191326
+[debug] [2023-02-18T23:05:29.674Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-18T23:05:31.481Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 23:05:32 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=30947adc-6065-4959-8ccc-6cb1f2e539ba;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=30947adc-6065-4959-8ccc-6cb1f2e539ba;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=3C237F4DC070376303F243E5F77D2F29; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-18T23:05:31.482Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-18T23:05:31.484Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2023-02-18T23:05:37.872Z] : 
+[debug] [2023-02-18T23:05:37.873Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T23:05:37.874Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2023-02-18T23:05:37.874Z] : CLI Version:  1.13.3
+[debug] [2023-02-18T23:05:37.875Z] : Platform:     win32
+[debug] [2023-02-18T23:05:37.875Z] : Node Version: v18.12.1
+[debug] [2023-02-18T23:05:37.876Z] : Time:         Sun Feb 19 2023 07:05:37 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-18T23:05:37.876Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T23:05:37.876Z] : 
+[debug] [2023-02-18T23:05:38.517Z] : > authorizing via signed-in user option
+[debug] [2023-02-18T23:05:38.517Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-18T23:05:38.528Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284 
+
+[debug] [2023-02-18T23:05:39.170Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 23:05:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=1a0489f6-82a9-4b93-9fc2-363e16ca9bdf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1a0489f6-82a9-4b93-9fc2-363e16ca9bdf;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T23:05:39.183Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/environment 
+
+[debug] [2023-02-18T23:05:39.733Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 23:05:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=4c8fbf34-3273-45f9-9fb5-c1f7c4b10bff;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4c8fbf34-3273-45f9-9fb5-c1f7c4b10bff;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T23:05:39.772Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-18T23:05:40.350Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 23:05:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=bdf0c658-9216-4a28-a9ad-23cc891714bd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bdf0c658-9216-4a28-a9ad-23cc891714bd;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T23:05:40.359Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-18T23:05:40.592Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/server/upsert 
+
+[debug] [2023-02-18T23:05:43.459Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 23:05:44 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=aa07f844-ef86-465c-895c-3cec0adaf7ab;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=aa07f844-ef86-465c-895c-3cec0adaf7ab;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T23:05:43.620Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2023-02-18T23:05:43.620Z] : i Building Application...
+[info] [2023-02-18T23:05:45.594Z] : [react-plugin]: Creating an optimized production build...
+[info] [2023-02-18T23:05:54.971Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T23:05:54.972Z] : [react-plugin]: [eslint] 
+src\Alternative.js
+  Line 6:18:   'setPeople' is assigned a value but never used                                                                                                                                                                                               no-unused-vars
+  Line 48:6:   React Hook useEffect has a missing dependency: 'people.length'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setIndex' needs the current value of 'people.length'  react-hooks/exhaustive-deps
+  Line 65:41:  Expected '===' and instead saw '=='                                                                                                                                                                                                          eqeqeq
+
+src\App.js
+  Line 6:18:   'setPeople' is assigned a value but never used  no-unused-vars
+  Line 40:41:  Expected '===' and instead saw '=='             eqeqeq
+
+src\index.js
+  Line 4:8:  'App' is defined but never used  no-unused-vars
+[info] [2023-02-18T23:05:54.972Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T23:05:54.972Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T23:05:54.973Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2023-02-18T23:05:54.985Z] : [react-plugin]:   47.63 kB  build\static\js\main.2998fdf7.js
+[info] [2023-02-18T23:05:54.985Z] : [react-plugin]:   1.35 kB   build\static\css\main.b4cf9182.css
+[info] [2023-02-18T23:05:54.986Z] : [react-plugin]:  
+[debug] [2023-02-18T23:05:55.376Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/12143000000093284/webapp 
+
+[debug] [2023-02-18T23:05:58.240Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 23:05:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=752a024d-1958-4e5f-af13-49dc504ebf63;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=752a024d-1958-4e5f-af13-49dc504ebf63;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T23:05:58.240Z] : 
+[info] [2023-02-18T23:05:58.241Z] : i functions(slider_function): URL => https://slider-771945458.development.catalystserverless.com/server/slider_function/
+[info] [2023-02-18T23:05:58.241Z] : √ functions(slider_function): deploy successful
+[info] [2023-02-18T23:05:58.241Z] : 
+[info] [2023-02-18T23:05:58.241Z] : √ client: deploy successful
+[info] [2023-02-18T23:05:58.242Z] : i client: URL => https://slider-771945458.development.catalystserverless.com/app/index.html
+[info] [2023-02-18T23:05:58.242Z] : 
+[info] [2023-02-18T23:05:58.242Z] : √ Catalyst deploy complete!
+[debug] [2023-02-18T23:05:58.242Z] : NO ERRORS REGISTERED
+[debug] [2023-02-18T23:05:58.243Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2023-02-18T23:05:58.243Z] : TOTAL DURATION OF COMMAND EXEC : 19739
+[debug] [2023-02-18T23:05:58.256Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-18T23:06:00.119Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 23:06:00 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=a4b5e8bf-e920-4e77-82db-56e0a353cea6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a4b5e8bf-e920-4e77-82db-56e0a353cea6;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=9D7FA1EDD402E694B62B839E20BB606B; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-18T23:06:00.119Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-18T23:06:00.121Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
